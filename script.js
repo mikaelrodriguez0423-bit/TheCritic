@@ -1,8 +1,7 @@
 /* ========================================== 
    The Grille - JavaScript Functionality
-   Author: [Your Name]
+   Author: Mikael Sheeray Rodriguez
    Date: October 2025
-   Description: Interactive features for movie review website
    ========================================== */
 
 // ==================== HAMBURGER MENU FUNCTION ====================
@@ -569,4 +568,5 @@ window.UserProfile = UserProfile;
 window.calculateAverageRating = calculateAverageRating;
 window.getTopRatedMovies = getTopRatedMovies;
 window.getRecommendation = getRecommendation;
+
 
