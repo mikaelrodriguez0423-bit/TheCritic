@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Critic - Home</title>
+  <link rel="stylesheet" href="Styles.css" />
+  <script src="Script.js" defer></script>
+</head>
+
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Icon (left side on mobile) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Center Links (hidden on mobile) -->
+      <ul class="nav-left">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+      </ul>
+
+      <!-- Right Logo -->
+      <a href="index.html" class="logo">
+        <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="logo-img" />
+      </a>
+
+      <!-- Right Links (hidden on mobile) -->
+      <ul class="nav-right">
+        <li><a href="TvShows.html">TV Shows</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <!-- Side Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="TvShows.html">TV Shows</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Optional overlay for dramatic effect -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <div class="container">
+    <section class="hero-section">
+      <div class="hero-slide active" data-link="Reviews.html?movie=fight-club">
+        <img src="Img/home/FightClub.jpg" alt="Fight Club" class="hero-img" />
+        <div class="hero-content">
+          <h1 class="hero-title">Fight Club</h1>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-link="Reviews.html?movie=inception">
+        <img src="Img/home/Inception.jpg" alt="Inception" class="hero-img" />
+        <div class="hero-content">
+          <h1 class="hero-title">Inception</h1>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="hero-slide" data-link="Reviews.html?movie=dark-knight">
+        <img src="Img/home/THE-DARK-KNIGHT-RISES_03.jpg" alt="The Dark Knight" class="hero-img" />
+        <div class="hero-content">
+          <h1 class="hero-title">The Dark Knight</h1>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+
+      <button class="carousel-nav prev" onclick="changeSlide(-1); event.stopPropagation();">‹</button>
+      <button class="carousel-nav next" onclick="changeSlide(1); event.stopPropagation();">›</button>
+    </section>
+
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+      <div class="section-header">
+        <h2 class="section-title">TRENDING</h2>
+        <div class="filter-tabs">
+          <button class="active" onclick="filterContent('movies')">Movies</button>
+          <button onclick="filterContent('tv')">Tv Shows</button>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search movies, shows, actors..." id="searchInput" />
+        <span class="mic-icon">🎤</span>
+      </div>
+
+      <!-- MOVIE GRID (3 columns, now with links) -->
+      <div class="movie-grid" id="movieGrid">
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=scarface'" style="cursor: pointer;">
+          <img src="Img/home/Scarface.jpg" alt="Scarface" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Scarface</h3>
+            <div class="movie-rating">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=john-wick'" style="cursor: pointer;">
+          <img src="Img/home/JohnWick.jpg" alt="John Wick" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">John Wick</h3>
+            <div class="movie-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=american-psycho'"
+          style="cursor: pointer;">
+          <img src="Img/home/AmericanPsycho.webp" alt="American Psycho" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">American Psycho</h3>
+            <div class="movie-rating">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=equalizer'" style="cursor: pointer;">
+          <img src="Img/home/Equalizer.jpg" alt="Equalizer" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Equalizer</h3>
+            <div class="movie-rating">★★★☆☆</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=good-will-hunting'"
+          style="cursor: pointer;">
+          <img src="Img/home/GoodWillHunting.jpg" alt="Good Will Hunting" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Good Will Hunting</h3>
+            <div class="movie-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=lockdown'" style="cursor: pointer;">
+          <img src="Img/home/Lockdown.png" alt="Lock Down" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Lock Down</h3>
+            <div class="movie-rating">★★★☆☆</div>
+          </div>
+        </div>
+      </div>
+      <!-- MOVIE GRID -->
+      <div class="movie-grid" id="movieGrid">
+        <!-- your existing movie cards -->
+      </div>
+
+      <!-- TV SHOW GRID (initially hidden) -->
+      <div class="movie-grid" id="tvGrid" style="display: none;">
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=breaking-bad'">
+          <img src="Img/tvshows/BreakingBad.jpg" alt="Breaking Bad" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Breaking Bad</h3>
+            <div class="movie-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=stranger-things'">
+          <img src="Img/tvshows/StrangerThings.webp" alt="Stranger Things" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Stranger Things</h3>
+            <div class="movie-rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="movie-card" onclick="window.location.href='Reviews.html?movie=wednesday'">
+          <img src="Img/tvshows/Wednesday.jpg" alt="Wednesday" class="movie-poster-img" />
+          <div class="movie-info">
+            <h3 class="movie-title">Wednesday</h3>
+            <div class="movie-rating">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all">
+
+        <!-- Show all movies or tv shows button -->
+        <!--<button class="active" onclick="filterContent('movies')">Movies</button>
+                <button onclick="filterContent('tv')">Tv Shows</button> -->
+        <a href="Movies.html" class="view-all-btn">View All</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="footer-logo-img" />
+        <div>
+          <div class="footer-tagline">Where Masterpieces Are Measured.</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="Movies.html">Movies</a>
+        <a href="TvShows.html">Tv Shows</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/mikaelsheeray.rodriguez" class="social-icon" target="_blank">f</a>
+        <a href="https://www.instagram.com/" class="social-icon" target="_blank">📷</a>
+        <a href="https://www.youtube.com/channel/UCqGom0FIhv2HtHSJ5Uxgwlw" class="social-icon" target="_blank">▶️</a>
+        <a href="https://twitter.com" class="social-icon" target="_blank">✕</a>
+        <a href="https://www.linkedin.com/in/mikael-sheeray-rodriguez-0749b9381/" class="social-icon"
+          target="_blank">in</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function filterContent(type) {
+      const movieGrid = document.getElementById("movieGrid");
+      const tvGrid = document.getElementById("tvGrid");
+      const buttons = document.querySelectorAll(".filter-tabs button");
+
+      // Reset active states
+      buttons.forEach(btn => btn.classList.remove("active"));
+
+      if (type === "movies") {
+        movieGrid.style.display = "grid";
+        tvGrid.style.display = "none";
+        buttons[0].classList.add("active");
+      } else if (type === "tv") {
+        movieGrid.style.display = "none";
+        tvGrid.style.display = "grid";
+        buttons[1].classList.add("active");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

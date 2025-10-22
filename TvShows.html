@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Critic - TvShows</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Icon (left side on mobile) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Center Links (hidden on mobile) -->
+      <ul class="nav-left">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+      </ul>
+
+      <!-- Right Logo -->
+      <a href="index.html" class="logo">
+        <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="logo-img" />
+      </a>
+
+      <!-- Right Links (hidden on mobile) -->
+      <ul class="nav-right">
+        <li><a href="TvShows.html">TV Shows</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <!-- Side Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="TvShows.html">TV Shows</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Optional overlay for dramatic effect -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+
+  <div class="container">
+    <!-- ====== FILTER SECTION ====== -->
+    <div class="filter-section">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search TV shows..." id="searchInput">
+      </div>
+
+      <!-- Categories Buttons -->
+      <div class="categories-btn">
+        <button class="category active" data-genre="all">All</button>
+        <button class="category" data-genre="drama">Drama</button>
+        <button class="category" data-genre="fantasy">Fantasy</button>
+        <button class="category" data-genre="action">Action</button>
+        <button class="category" data-genre="crime">Crime</button>
+        <button class="category" data-genre="sci-fi">Sci-Fi</button>
+      </div>
+      <p id="movieCount" style="text-align:center; color:#ffcc00; font-weight:bold; margin-top:10px;"></p>
+    </div>
+
+    <!-- ====== TV SHOWS GRID ====== -->
+    <div class="movies-grid2" id="moviesGrid">
+
+      <!-- CRIME / DRAMA -->
+      <div class="movie-card2" data-genre="crime" onclick="window.location.href='Reviews.html?movie=breaking-bad'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/BreakingBad.jpg) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">Breaking Bad</h3>
+          <div class="movie-rating2">★★★☆☆</div>
+          <p class="movie-description2">A high school chemistry teacher's transformation into a ruthless drug kingpin is
+            a masterclass in moral decay.</p>
+        </div>
+      </div>
+
+      <!-- FANTASY -->
+      <div class="movie-card2" data-genre="fantasy" onclick="window.location.href='Reviews.html?movie=wednesday'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/Wednesday.jpg) center / cover no-repeat"></div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">Wednesday</h3>
+          <div class="movie-rating2">★★★☆☆</div>
+          <p class="movie-description2">A dark coming-of-age story as Wednesday Addams unravels mysteries at Nevermore
+            Academy.</p>
+        </div>
+      </div>
+
+      <!-- ACTION -->
+      <div class="movie-card2" data-genre="action" onclick="window.location.href='Reviews.html?movie=daredevil'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/Daredevil.webp) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">Daredevil</h3>
+          <div class="movie-rating2">★★★★★</div>
+          <p class="movie-description2">Blind lawyer Matt Murdock fights crime in Hell's Kitchen as the vigilante
+            Daredevil.</p>
+        </div>
+      </div>
+
+      <!-- DRAMA -->
+      <div class="movie-card2" data-genre="drama" onclick="window.location.href='Reviews.html?movie=good-doctor'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/TheGoodDoctor.jpg) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">The Good Doctor</h3>
+          <div class="movie-rating2">★★★☆☆</div>
+          <p class="movie-description2">A young surgeon with autism uses his extraordinary medical gifts to save lives.
+          </p>
+        </div>
+      </div>
+
+      <!-- FANTASY -->
+      <div class="movie-card2" data-genre="fantasy" onclick="window.location.href='Reviews.html?movie=sandman'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/TheSandman.webp) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">The Sandman</h3>
+          <div class="movie-rating2">★★★☆☆</div>
+          <p class="movie-description2">The Lord of Dreams embarks on a journey to restore order to his realm and
+            beyond.</p>
+        </div>
+      </div>
+
+      <!-- DRAMA -->
+      <div class="movie-card2" data-genre="drama" onclick="window.location.href='Reviews.html?movie=suits'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/Suits.webp) center / cover no-repeat"></div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">Suits</h3>
+          <div class="movie-rating2">★★★★☆</div>
+          <p class="movie-description2">A college dropout lands a legal job despite never attending law school.</p>
+        </div>
+      </div>
+
+      <!-- SCI-FI -->
+      <div class="movie-card2" data-genre="sci-fi" onclick="window.location.href='Reviews.html?movie=stranger-things'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/StrangerThings.webp) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">Stranger Things</h3>
+          <div class="movie-rating2">★★★★★</div>
+          <p class="movie-description2">A group of kids face supernatural horrors and government secrets in the 80s.</p>
+        </div>
+      </div>
+
+      <!-- DRAMA -->
+      <div class="movie-card2" data-genre="drama" onclick="window.location.href='Reviews.html?movie=the-last-of-us'"
+        style="cursor: pointer;">
+        <div class="movie-thumbnail2" style="background: url(Img/tvshows/TheLastOfUs.jpg) center / cover no-repeat">
+        </div>
+        <div class="movie-details2">
+          <h3 class="movie-title2">The Last of Us</h3>
+          <div class="movie-rating2">★★★★☆</div>
+          <p class="movie-description2">Two survivors bond while navigating a world ravaged by a fungal pandemic.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="paginationContainer">
+      <button id="prevPage" class="page-btn">Prev</button>
+      <div id="pageNumbers"></div>
+      <button id="nextPage" class="page-btn">Next</button>
+    </div>
+
+  </div>
+  <!-- CONTAINER ENDS HERE -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="footer-logo-img" />
+        <div>
+          <div class="footer-tagline">Where Masterpieces Are Measured.</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="Movies.html">Movies</a>
+        <a href="TvShows.html">Tv Shows</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/mikaelsheeray.rodriguez" class="social-icon" target="_blank">f</a>
+        <a href="https://www.instagram.com/" class="social-icon" target="_blank">📷</a>
+        <a href="https://www.youtube.com/channel/UCqGom0FIhv2HtHSJ5Uxgwlw" class="social-icon" target="_blank">▶️</a>
+        <a href="https://twitter.com" class="social-icon" target="_blank">✕</a>
+        <a href="https://www.linkedin.com/in/mikael-sheeray-rodriguez-0749b9381/" class="social-icon"
+          target="_blank">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
