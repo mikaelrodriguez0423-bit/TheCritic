@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Critic - Contact Us</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="navbar">
+            <!-- Hamburger Icon (left side on mobile) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Center Links (hidden on mobile) -->
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+            </ul>
+
+            <!-- Right Logo -->
+            <a href="index.html" class="logo">
+                <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="logo-img" />
+            </a>
+
+            <!-- Right Links (hidden on mobile) -->
+            <ul class="nav-right">
+                <li><a href="TvShows.html">TV Shows</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+
+        <!-- Side Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="TvShows.html">TV Shows</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <main class="container">
+
+            <section class="contact-intro">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="intro-text">Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+            </section>
+
+            <!-- ==================== CONTACT FORM (Stage 8 Requirement) ==================== -->
+            <section class="form-section">
+                <h2 class="section-title">Send Us a Message</h2>
+
+                <form action="submit-form.php" method="post" class="contact-form">
+                    <fieldset class="form-group">
+                        <legend>Personal Information</legend>
+
+                        <div class="form-row">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required
+                                placeholder="Enter your first name" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required
+                                placeholder="Enter your last name" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+63 912 345 6789"
+                                pattern="[+0-9\s-()]+" />
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Your Message</legend>
+
+                        <div class="form-row">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="review">Movie Review Request</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="technical">Technical Issue</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Type your message here..."></textarea>
+                        </div>
+
+                        <div class="form-row checkbox-row">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+                            <label for="newsletter">Subscribe to our newsletter for latest movie reviews</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                        <button type="reset" class="btn btn-reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- ==================== OFFICE HOURS TABLE (Stage 8 Requirement) ==================== -->
+            <section class="table-section">
+                <h2 class="section-title">Office Hours & Contact Information</h2>
+
+                <div class="table-container">
+                    <table class="info-table">
+                        <caption>Available Contact Times</caption>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Office Hours</th>
+                                <th>Phone Support</th>
+                                <th>Email Response Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                                <td>Available</td>
+                                <td>2-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                                <td>Available</td>
+                                <td>2-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                                <td>Available</td>
+                                <td>2-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                                <td>Available</td>
+                                <td>2-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                                <td>Available</td>
+                                <td>2-4 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 AM - 2:00 PM</td>
+                                <td>Limited</td>
+                                <td>6-8 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                                <td>Unavailable</td>
+                                <td>24 hours</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">All times are in Philippine Standard Time (PST)</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <!-- Mobile-friendly list (hidden on desktop) -->
+                <div class="mobile-contact-list">
+                    <h3>Contact Schedule</h3>
+                    <ul>
+                        <li><strong>Weekdays:</strong> 9:00 AM - 6:00 PM</li>
+                        <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                        <li><strong>Phone:</strong> +63 912 345 6789</li>
+                        <li><strong>Email:</strong> contact@thegrille.com</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ==================== CONTACT INFO GRID ==================== -->
+            <section class="contact-grid-section">
+                <h2 class="section-title">Other Ways to Reach Us</h2>
+
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>@mikaelrodiguez0423</p>
+                        <p class="contact-detail">Response within 2-4 hours</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+63 962 786 2721" class="tel-link">+63 962 786 2721</a></p>
+                        <p class="contact-detail">Available Mon-Fri 9AM-6PM</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Sepung Bulaon</p>
+                        <p class="contact-detail">Porac, Pampanga, Philippines</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Social Media</h3>
+                        <p>Follow us on social media</p>
+                        <p class="contact-detail">Daily updates & reviews</p>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Img/The_critic_Logo.png" alt="The Grille Logo" class="footer-logo-img" />
+                    <div>
+                        <div class="footer-tagline">Where Masterpieces Are Measured.</div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="Movies.html">Movies</a>
+                    <a href="TvShows.html">Tv Shows</a>
+                    <a href="Reviews.html">Reviews</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mikaelsheeray.rodriguez" class="social-icon" target="_blank">f</a>
+                    <a href="https://www.instagram.com/" class="social-icon" target="_blank">📷</a>
+                    <a href="https://www.youtube.com/channel/UCqGom0FIhv2HtHSJ5Uxgwlw" class="social-icon"
+                        target="_blank">▶️</a>
+                    <a href="https://twitter.com" class="social-icon" target="_blank">✕</a>
+                    <a href="https://www.linkedin.com/in/mikael-sheeray-rodriguez-0749b9381/" class="social-icon"
+                        target="_blank">in</a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
